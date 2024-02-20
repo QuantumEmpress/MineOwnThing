@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         mybg: "#1a1a1a"
-      }
+      },
     },
   },
   plugins: [],
