@@ -16,7 +16,7 @@
   <body class="font-sans bg-mybg">
     <header class="sticky top-0 z-50 w-auto h-auto navigation bg-mybg">
       <nav
-        class="lg:items-center pt-5 lg:pl-20 lg:pr-20 pb-5 flex flex-col lg:flex-row lg:justify-between w-[92%] mx-auto border-b-white text-white"
+        class="lg:items-center pt-5 lg:pl-20 lg:pr-20 pb-5 flex flex-row lg:flex-row justify-between lg:justify-between w-[92%] mx-auto border-b-white text-white"
       >
         <div>
           <h1 class="text-4xl font-medium lg:items-center">
@@ -25,7 +25,7 @@
         </div>
         <div>
           <ul
-            class="flex-col hidden gap-5 pt-5 text-base font-light uppercase text-[#8c8c8c] lg:flex lg:flex-row lg:items-center lg:pt-0 lg:gap-9"
+            class="flex flex-col text-5xl h-[100vh] lg:h-auto pt-[100px] pl-8 bg-mybg lg:bg-transparent z-50 lg:z-auto top-[5rem] lg:top-auto w-full left-0 absolute lg:relative gap-3 lg:text-base font-light uppercase text-[#8c8c8c] lg:flex lg:flex-row lg:items-center lg:pt-0 lg:gap-9"
           >
             <li
               class="transition-all duration-150 ease-in-out hover:text-yellow-500"
@@ -54,10 +54,16 @@
             </li>
           </ul>
         </div>
+        <div class="lg:hidden border-2 border-white">
+          <button class="text-white text-2xl lg:hidden">Menu</button>
+        </div>
       </nav>
     </header>
     <!-- First section -->
-    <section id="home-section" class="pb-2 bg-mybg top-32">
+    <section
+      id="home-section"
+      class="h-[110vh] md:h-[100vh] lg:h-[100vh] pb-2 bg-mybg top-32"
+    >
       <div
         class="flex flex-col gap-4 md:justify-between md:flex-row lg:flex-col lg:pl-0 md:pl-32 lg:pr-0 md:pr-32"
       >
@@ -81,9 +87,9 @@
                 ><br />Developer
               </h1>
             </div>
-            <div class="relative">
+            <div class="relative mt-10">
               <button
-                class="cv-button bg-mybg text-[#a6a6a6] hover:text-yellow-500 focus:text-yellow-500 px-9 py-3 uppercase font-medium border-2 transition-all duration-150 ease-in-out"
+                class="cv-button bg-mybg text-[#a6a6a6] hover:text-yellow-500 focus:text-yellow-500 px-9 py-3 uppercase font-medium border-2 border-yellow-500 transition-all duration-150 ease-in-out"
               >
                 Download CV
               </button>
@@ -103,7 +109,7 @@
           </div>
         </div>
         <div
-          class="absolute flex justify-center w-full gap-3 lg:w-full md:w-fit md:items-stretch lg:flex-row md:flex-col md:relative lg:relative -bottom-36 lg:bottom-0"
+          class="absolute flex justify-center w-full gap-5 lg:w-full md:w-fit md:items-stretch lg:flex-row md:flex-col md:relative lg:relative -bottom-28 lg:bottom-0"
         >
           <span
             class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"
@@ -129,11 +135,12 @@
       </div>
     </section>
     <!-- Second section -->
-    <section id="about-section" class="pt-5 bg-gray-800 h-[100vh]">
-      <h1 class="flex justify-center w-full text-4xl text-white capitalize align-middle">
-        What i'm&nbsp;<span class="text-[2.5rem] text-yellow-500"
-          >About</span
-        ><span class="text-[2.5rem]">.</span>
+    <section id="about-section" class="pt-5 pl-40 bg-gray-800 h-[100vh]">
+      <h1
+        class="flex justify-start w-full text-4xl text-white capitalize align-middle"
+      >
+        What i'm&nbsp;<span class="text-[2.5rem] text-yellow-500">About</span
+        ><span class="text-[2.5rem] text-yellow-500">...</span>
       </h1>
     </section>
   </body>
