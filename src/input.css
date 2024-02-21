@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+    .socials:hover html{
+        background-color: white;
+    }
+}
