@@ -2,8 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-    .socials:hover html{
-        background-color: white;
+@layer base {
+    section{
+        --background-color: #a6a6a6;
+        --border-size: 3px;
+    }
+    section .cv-button{
+        z-index: 5;
+    }
+    section .cv-button::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: none;
+        z-index: 0;
+        border: var(--border-size) solid var(--background-color);
+        transition: top, left, right, bottom, 150ms ease-in-out;
+    }
+
+    section .cv-button:hover::before,
+    section .cv-button:focus::before{
+        top: calc(var(--border-size) * -2);
+        left: calc(var(--border-size) * -2);
+        right: calc(var(--border-size) * -2);
+        bottom: calc(var(--border-size) * -2);
+        border-color: rgb(234 179 8);
     }
 }
