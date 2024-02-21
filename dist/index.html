@@ -1,65 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="overflow-y-scroll scroll-smooth scroll-p-[5rem]">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OB</title>
-    <link rel="stylesheet" href="output.css">
-    <script src="https://kit.fontawesome.com/ecb0e6dc2b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="output.css" />
+    <script
+      src="https://kit.fontawesome.com/ecb0e6dc2b.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        /* Your CSS styles should go here */
+      /* Your CSS styles should go here */
     </style>
-</head>
-<body class="font-sans bg-mybg">
+  </head>
+  <body class="font-sans bg-mybg">
     <header class="sticky top-0 z-50 w-auto h-auto navigation bg-mybg">
-        <nav class="lg:items-center pt-5 lg:pl-20 lg:pr-20 pb-5 flex flex-col lg:flex-row lg:justify-between w-[92%] mx-auto border-b-white text-white">
-            <div>
-                <h1 class="text-4xl font-medium lg:items-center"><a href="#">OB</a></h1>
-            </div>
-            <div>
-                <ul class="flex-col hidden gap-5 pt-5 text-base font-light uppercase text-[#8c8c8c] lg:flex lg:flex-row lg:items-center lg:pt-0 lg:gap-9">
-                    <li class="transition-all duration-150 ease-in-out hover:text-yellow-500"><a href="#about-section">About</a></li>
-                    <li class="transition-all duration-150 ease-in-out hover:text-yellow-500"><a href="#services-section">Services</a></li>
-                    <li class="transition-all duration-150 ease-in-out hover:text-yellow-500"><a href="#testimonials-section">Testimonials</a></li>
-                    <li class="transition-all duration-150 ease-in-out hover:text-yellow-500"><a href="#projects-section">Projects</a></li>
-                    <li class="transition-all duration-150 ease-in-out hover:text-yellow-500"><a href="#contacts-section">Contacts</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav
+        class="lg:items-center pt-5 lg:pl-20 lg:pr-20 pb-5 flex flex-col lg:flex-row lg:justify-between w-[92%] mx-auto border-b-white text-white"
+      >
+        <div>
+          <h1 class="text-4xl font-medium lg:items-center">
+            <a href="#">OB</a>
+          </h1>
+        </div>
+        <div>
+          <ul
+            class="flex-col hidden gap-5 pt-5 text-base font-light uppercase text-[#8c8c8c] lg:flex lg:flex-row lg:items-center lg:pt-0 lg:gap-9"
+          >
+            <li
+              class="transition-all duration-150 ease-in-out hover:text-yellow-500"
+            >
+              <a href="#about-section">About</a>
+            </li>
+            <li
+              class="transition-all duration-150 ease-in-out hover:text-yellow-500"
+            >
+              <a href="#services-section">Services</a>
+            </li>
+            <li
+              class="transition-all duration-150 ease-in-out hover:text-yellow-500"
+            >
+              <a href="#testimonials-section">Testimonials</a>
+            </li>
+            <li
+              class="transition-all duration-150 ease-in-out hover:text-yellow-500"
+            >
+              <a href="#projects-section">Projects</a>
+            </li>
+            <li
+              class="transition-all duration-150 ease-in-out hover:text-yellow-500"
+            >
+              <a href="#contacts-section">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <!-- First section -->
-    <section id="home-section" class="bg-mybg top-32">
-        <div class="flex flex-col gap-4 md:justify-between md:flex-row lg:flex-col lg:pl-0 md:pl-32 lg:pr-0 md:pr-32">
-            <div class="flex flex-col-reverse  lg:flex-row lg:pl-60 lg:pr-60 lg:pt-[4.5rem] items-center justify-between">
-                <div class="absolute z-10 flex flex-col items-start gap-2 lg:relative top-56 lg:top-0 bg-gradient-to-t from-mybg to-transparent">
-                    <h1 class="text-5xl text-white">Hello<span class="text-yellow-500">.</span></h1>
-                    <div class="flex items-center gap-2">
-                        <div class="bg-yellow-500 w-14 h-0.5"></div>
-                        <p class="text-lg font-thin text-white">I'm Onanta Bassey</p>
-                    </div>
-                    <div><h1 class="text-white text-7xl">Full Stack<br><span class="text-6xl text-yellow-500">Software</span><br>Developer</h1></div>
-                    <div class="relative">
-                        <button class="cv-button bg-mybg text-[#a6a6a6] hover:text-yellow-500 px-9 py-3 uppercase font-medium border-2 transition-all duration-150 ease-in-out">Download CV</button>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="relative w-80 h-96">
-                        <img class="relative w-full h-full" src="../images/profile_2.png" alt="Display Image">
-                    </div>
-                    <div class="absolute top-0 left-0 right-0 w-full h-full -bottom-0 bg bg-gradient-to-t from-mybg to-transparent"></div>
-                </div>
+    <section id="home-section" class="pb-2 bg-mybg top-32">
+      <div
+        class="flex flex-col gap-4 md:justify-between md:flex-row lg:flex-col lg:pl-0 md:pl-32 lg:pr-0 md:pr-32"
+      >
+        <div
+          class="flex flex-col-reverse lg:flex-row lg:pl-60 lg:pr-60 lg:pt-[4.5rem] items-center justify-between"
+        >
+          <div
+            class="absolute z-10 flex flex-col items-start gap-2 lg:relative top-56 lg:top-0 bg-gradient-to-t from-mybg to-transparent"
+          >
+            <h1 class="text-5xl text-white">
+              Hello<span class="text-yellow-500">.</span>
+            </h1>
+            <div class="flex items-center gap-2">
+              <div class="bg-yellow-500 w-14 h-0.5"></div>
+              <p class="text-lg font-thin text-white">I'm Onanta Bassey</p>
             </div>
-            <div class="absolute flex justify-center w-full gap-3 lg:w-full md:w-fit md:items-stretch lg:flex-row md:flex-col md:relative lg:relative -bottom-36 lg:bottom-0">
-                <span class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"><a class="text-3xl " href="#"><i class="fa-brands fa-x-twitter text-[#595959]"></i></a></span>
-                <span class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"><a class="text-3xl " href="#"><i class="fa-brands fa-facebook-f text-[#595959]"></i></a></span>
-                <span class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"><a class="text-3xl " href="#"><i class="fa-brands fa-github text-[#595959]"></i></a></span>
-                <span class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"><a class="text-3xl " href="#"><i class="fa-brands fa-linkedin-in text-[#595959]"></i></a></span>
+            <div>
+              <h1 class="text-white text-7xl">
+                Full Stack<br /><span class="text-6xl text-yellow-500"
+                  >Software</span
+                ><br />Developer
+              </h1>
             </div>
+            <div class="relative">
+              <button
+                class="cv-button bg-mybg text-[#a6a6a6] hover:text-yellow-500 focus:text-yellow-500 px-9 py-3 uppercase font-medium border-2 transition-all duration-150 ease-in-out"
+              >
+                Download CV
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="relative w-80 h-96">
+              <img
+                class="relative w-full h-full"
+                src="../images/profile_2.png"
+                alt="Display Image"
+              />
+            </div>
+            <div
+              class="absolute top-0 left-0 right-0 w-full h-full -bottom-0 bg bg-gradient-to-t from-mybg to-transparent"
+            ></div>
+          </div>
         </div>
+        <div
+          class="absolute flex justify-center w-full gap-3 lg:w-full md:w-fit md:items-stretch lg:flex-row md:flex-col md:relative lg:relative -bottom-36 lg:bottom-0"
+        >
+          <span
+            class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"
+            ><a class="text-3xl" href="#"
+              ><i class="fa-brands fa-x-twitter text-[#595959]"></i></a
+          ></span>
+          <span
+            class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"
+            ><a class="text-3xl" href="#"
+              ><i class="fa-brands fa-facebook-f text-[#595959]"></i></a
+          ></span>
+          <span
+            class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"
+            ><a class="text-3xl" href="#"
+              ><i class="fa-brands fa-github text-[#595959]"></i></a
+          ></span>
+          <span
+            class="socials w-12 h-11 flex items-center justify-center border-2 border-[#595959] hover:border-[#f2f2f2] transition-all duration-150 ease-in-out hover:scale-110"
+            ><a class="text-3xl" href="#"
+              ><i class="fa-brands fa-linkedin-in text-[#595959]"></i></a
+          ></span>
+        </div>
+      </div>
     </section>
     <!-- Second section -->
-    <section id="about-section" class="bg-white">
-        <!-- Content for the "About" section goes here -->
+    <section id="about-section" class="pt-5 bg-gray-800 h-[100vh]">
+      <h1 class="flex justify-center w-full text-4xl text-white capitalize align-middle">
+        What i'm&nbsp;<span class="text-[2.5rem] text-yellow-500"
+          >About</span
+        ><span class="text-[2.5rem]">.</span>
+      </h1>
     </section>
-</body>
+  </body>
 </html>
