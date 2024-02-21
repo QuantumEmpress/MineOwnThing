@@ -25,7 +25,8 @@
         </div>
         <div>
           <ul
-            class="flex flex-col text-5xl h-[100vh] lg:h-auto pt-[100px] pl-8 bg-mybg lg:bg-transparent z-50 lg:z-auto top-[5rem] lg:top-auto w-full left-0 absolute lg:relative gap-3 lg:text-base font-light uppercase text-[#8c8c8c] lg:flex lg:flex-row lg:items-center lg:pt-0 lg:gap-9"
+            id="menu"
+            class="menu-links lg:flex flex-col text-5xl h-[100vh] lg:h-auto pt-[100px] pl-8 bg-mybg lg:bg-transparent z-50 lg:z-auto top-[5rem] lg:top-auto w-full left-[-100%] lg:left-0 absolute lg:relative gap-3 lg:text-base font-light uppercase text-[#8c8c8c] lg:flex-row lg:items-center lg:pt-0 lg:gap-9"
           >
             <li
               class="transition-all duration-150 ease-in-out hover:text-yellow-500"
@@ -55,7 +56,12 @@
           </ul>
         </div>
         <div class="lg:hidden border-2 border-white">
-          <button class="text-white text-2xl lg:hidden">Menu</button>
+          <button
+            onclick="toggleNavbar()"
+            class="bg-pink-700 h-full text-white text-2xl lg:hidden"
+          >
+            Menu
+          </button>
         </div>
       </nav>
     </header>
@@ -144,4 +150,23 @@
       </h1>
     </section>
   </body>
+  <script>
+    let isVisible = false;
+    function toggleNavbar() {
+      let element = document.getElementById("menu");
+      const tog = document.querySelector(".menu-links");
+      if (!isVisible) {
+        tog.classList.remove("left-[-100%]");
+        tog.classList.add("left-0");
+        console.log("opening");
+        element.style.maxWidth = element.scrollHeight + "px";
+        isVisible = true;
+      } else {
+        tog.classList.remove("left-0");
+        tog.classList.add("left-[-100%]");
+        console.log("closing");
+        isVisible = false;
+      }
+    }
+  </script>
 </html>
