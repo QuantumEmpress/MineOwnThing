@@ -9,9 +9,7 @@
       src="https://kit.fontawesome.com/ecb0e6dc2b.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      /* Your CSS styles should go here */
-    </style>
+    <script src="../script/index.js"></script>
   </head>
   <body class="font-sans bg-mybg">
     <header class="sticky top-0 z-50 w-auto h-auto navigation bg-mybg">
@@ -20,38 +18,38 @@
       >
         <div>
           <h1 class="text-4xl font-medium lg:items-center">
-            <a href="#">OB</a>
+            <a onclick="closeNavBarOnLinkClick()" href="#">OB</a>
           </h1>
         </div>
         <div>
           <ul
             id="menu"
-            class="menu-links lg:flex flex-col text-5xl h-[100vh] lg:h-auto pt-[100px] pl-8 bg-mybg lg:bg-transparent z-50 lg:z-auto top-[5rem] lg:top-auto w-full left-[-100%] lg:left-0 absolute lg:relative gap-3 lg:text-base font-light uppercase text-[#8c8c8c] lg:flex-row lg:items-center lg:pt-0 lg:gap-9"
+            class="menu-links lg:flex flex-col text-5xl h-[100vh] lg:h-auto pt-[100px] border-r-[1px] lg:border-none border-[#262626] pl-2 md:pl-8 bg-mybg lg:bg-transparent z-50 lg:z-auto top-[5rem] lg:top-auto w-full md:w-[500px] transition-all duration-700 ease-in-out left-[-100%] lg:left-0 absolute lg:relative gap-3 lg:text-base font-light uppercase text-[#8c8c8c] lg:flex-row lg:items-center lg:pt-0 lg:gap-9"
           >
             <li
               class="transition-all duration-150 ease-in-out hover:text-yellow-500"
             >
-              <a href="#about-section">About</a>
+              <a onclick="closeNavBarOnLinkClick()" href="#about-section">About</a>
             </li>
             <li
               class="transition-all duration-150 ease-in-out hover:text-yellow-500"
             >
-              <a href="#services-section">Services</a>
+              <a onclick="closeNavBarOnLinkClick()" href="#services-section">Services</a>
             </li>
             <li
               class="transition-all duration-150 ease-in-out hover:text-yellow-500"
             >
-              <a href="#testimonials-section">Testimonials</a>
+              <a onclick="closeNavBarOnLinkClick()" href="#testimonials-section">Testimonials</a>
             </li>
             <li
               class="transition-all duration-150 ease-in-out hover:text-yellow-500"
             >
-              <a href="#projects-section">Projects</a>
+              <a onclick="closeNavBarOnLinkClick()" href="#projects-section">Projects</a>
             </li>
             <li
               class="transition-all duration-150 ease-in-out hover:text-yellow-500"
             >
-              <a href="#contacts-section">Contacts</a>
+              <a onclick="closeNavBarOnLinkClick()" href="#contacts-section">Contacts</a>
             </li>
           </ul>
         </div>
@@ -141,7 +139,7 @@
       </div>
     </section>
     <!-- Second section -->
-    <section id="about-section" class="pt-5 pl-40 bg-gray-800 h-[100vh]">
+    <section id="about-section" class="pt-5 md:pl-40 bg-gray-800 h-[100vh]">
       <h1
         class="flex justify-start w-full text-4xl text-white capitalize align-middle"
       >
@@ -150,23 +148,4 @@
       </h1>
     </section>
   </body>
-  <script>
-    let isVisible = false;
-    function toggleNavbar() {
-      let element = document.getElementById("menu");
-      const tog = document.querySelector(".menu-links");
-      if (!isVisible) {
-        tog.classList.remove("left-[-100%]");
-        tog.classList.add("left-0");
-        console.log("opening");
-        element.style.maxWidth = element.scrollHeight + "px";
-        isVisible = true;
-      } else {
-        tog.classList.remove("left-0");
-        tog.classList.add("left-[-100%]");
-        console.log("closing");
-        isVisible = false;
-      }
-    }
-  </script>
 </html>
