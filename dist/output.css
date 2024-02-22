@@ -486,7 +486,7 @@ section .cv-button:hover::before,
   height: 5px;
   border-radius: 7px;
   position: relative;
-  transition: all 0.3s;
+  transition: all 0.5s;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -810,11 +810,6 @@ section .cv-button:hover::before,
   border-color: rgb(89 89 89 / var(--tw-border-opacity));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-yellow-500 {
   --tw-border-opacity: 1;
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
@@ -833,11 +828,6 @@ section .cv-button:hover::before,
 .bg-mybg {
   --tw-bg-opacity: 1;
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
-}
-
-.bg-pink-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-500 {

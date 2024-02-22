@@ -43,7 +43,7 @@
     height: 5px;
     border-radius: 7px;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.5s;
     left: 50%;
     transform: translate(-50%, 0);
   }
